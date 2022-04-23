@@ -1,0 +1,391 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+.posicion{
+    position: relative;
+}
+#movimientosearch {
+    position:absolute;
+    right: 3px
+}
+a{
+    color: #000;
+}
+
+header {
+    background-color: #eac926;
+}
+header .logoHeader{
+      text-align: center;
+     margin-bottom: 20px;   
+}
+header .logoHeader img{
+    width: 50%;
+}
+.busqueda input{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.burguer-menu {
+    background-color: #1259c3;
+    
+    width: 50px;
+    margin: auto;
+    
+    display: inline-block;
+    color: white;
+    text-align: center;
+    height: 40px;
+    line-height: 30px;
+}
+.burguer {
+    text-align: center;
+}
+body {
+    background-color: #ebebeb;
+    font-family: 'Roboto', sans-serif;
+}
+ul li {
+    font-size: 12px;
+}
+
+p{
+    font-size: 12px;
+}
+p.precio{
+    font-size: 18px;
+}
+p.descuento {
+    font-size: 16px;
+}
+p.descripcion {
+    font-size: 16px;
+}
+
+.card-productos p.descripcion{
+    transition: 0ms;
+    display: none;
+}
+
+.card-productos:hover .descripcion{
+    display: inline-block;
+    transform: initial;
+}
+
+.ultima-visita .descripcion{
+    display: none;
+}
+.ofertas .descripcion{
+    display: none;
+}
+.items{
+    display: none;
+}
+.loginUsers{
+    display: none;
+}
+
+h2 { 
+    
+    font-size:24px
+}
+article{
+    background-color: white;
+}
+.camioncito {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    right: 20px;
+    top: -15px;
+    color: #39b54a;
+    position: absolute;
+    transform: rotate(0deg);
+   
+    
+
+}
+.card-productos:hover .cosas .camioncito {
+    TRANSFORM: rotate(-90deg);
+    transition: transform 0.5s;
+}
+.cosas {
+    position: relative;
+}
+
+
+section{
+    
+    box-shadow : 0px 0px 10px rgb ( 100 , 100 , 100 );
+}
+
+main{
+    box-shadow : 0px 0px 10px rgb ( 100 , 100 , 100 );
+}
+
+footer {
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+}
+footer ul {
+    list-style: none;
+}    
+footer li {
+    color: #666;
+}
+footer p {
+    color: #666;
+}
+
+.footer-flex .fas {
+    font-size: 2em;
+    margin-bottom: 10px;
+    transition: 450ms;
+}
+.footer-flex .fas:hover{
+    color: #1259c3;
+}
+
+main{
+    width: 90%;
+    margin: auto;
+}
+main article{
+    margin-top: 10px;
+    text-align: center;
+
+}
+
+main div.cosas{
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+}
+
+.card-img{
+    width: 200px;
+}
+.busqueda{
+    height: 26px;
+    position: absolute
+}
+.encabezado{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+nav.busqueda{
+    order: 0;
+    flex-grow: 50%;
+    position: absolute;
+}
+.mano {
+    order: 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+
+.items-flex {
+    display: none;
+    justify-content: space-around;
+    text-align: center;
+}
+@media(min-width:361px){
+    main .ultima-visita {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    main .ofertas{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .items{
+        display: block;
+    }
+    .loginUsers{
+        display: block;
+    }
+    .card-productos .card-img{
+        width: 200px;
+        margin: auto;
+    }
+    .ultima-visita .descripcion{
+        display: inline-block;
+    }
+    .ofertas .descripcion{
+        display: inline-block;
+    }
+    .burguer .burguer-menu{
+        display: none;
+    } 
+    .encabezado{
+        display:initial;
+    }
+
+    header{
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    header .logoHeader .mano{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .items-flex ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-right: 40px;
+    }
+        .flexencabezado{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+        }    
+        .items-flex {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+        }
+
+}
+
+@media(min-width:769px){
+    .card-productos .card-img{
+        width: 200px;
+        margin: auto;
+    }
+    .ultima-visita .descripcion{
+        display: inline-block;
+    }
+
+    .footer-flex{
+        display: flex;
+        margin: 10px;
+    }
+}
+
+img{
+    width: 90%;
+}
+
+.card-productos{
+    margin: 5px;
+}
+.card-productos:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+.card-img{
+    width: 90%;
+}
+.ofertas{
+    text-align: center;
+    box-shadow : 0px 0px 10px rgb ( 100 , 100 , 100 );
+}
+
+.ultima-visita .descuento{
+    color: #39b54a;
+}
+.ofertas .descuento{
+    color: #39b54a;
+}
+
+.banner{
+    width: 100%;
+}
+.card-productos{
+    flex-grow: 1;
+}
+
+.card-img{
+    margin: auto;
+}
+
+.precio-flex{
+    display: flex;
+}
+.precio-flex .precio{
+    display: flex;
+    flex-grow: 30%;
+}
+.precio-flex .descuento{
+    flex-grow: 70%;
+    margin: auto;
+}
+
+.logoHeader{
+    display: flex;
+    flex-grow: 1;
+}
+
+div.logoHeader, nav.busqueda{
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    position: relative;
+}
+nav.busqueda{
+    flex-grow: 50%;
+    position: relative;
+}
+
+ul li{
+    margin-right: 10px;
+}
+#enviar{
+    color:#000;
+    transition: all 1s;
+}
+#enviar:hover{
+    color:#eac926;
+    background-color: #0022AA;
+}
+
+.login{
+    width: 50%;
+    padding: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.boton{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+.boton-login{
+    width: 50%;
+}
+.nombre-usuario{
+    justify-content: center;
+    align-items: center;
+}
+.pasword{
+    justify-content: center;
+}
+.input-log{
+    width: 100%;
+}
+
+.input-reg{
+    width: 30%;
+}
